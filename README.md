@@ -38,3 +38,4 @@
 💻 Avoid operating system hell:
 * Just because your script works on Windows doesn't mean it will work on MacOS, and vice versa.
 * If possible, check your script or find beta testers to help you checking your script on the operating system that you don't use.
+* MacOS paths are seperated by `/` while windows paths are seperated by `\\` 
