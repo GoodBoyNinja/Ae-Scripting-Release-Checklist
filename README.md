@@ -33,3 +33,8 @@
 * * Tell other developers to not do it.
 * When using [Polyfills](https://developer.mozilla.org/en-US/docs/Glossary/Polyfill) try to make sure they do not make changes to core features using `.prototype`. If possible, make changes to those polyfills and turn them into objects with methods. The most common one is polyfilling `json` or `json2.js` by including it in your code.
 
+&nbsp;
+
+💻 Avoid operating system hell:
+* Just because your script works on Windows doesn't mean it will work on MacOS, and vice versa.
+* If possible, check your script or find beta testers to help you checking your script on the operating system that you don't use.
