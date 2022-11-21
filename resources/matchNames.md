@@ -3,13 +3,13 @@ Items in After-Effects often have secondary names. Those names are called **Matc
 
 
 
-## How the I know what Match Names to use?
+## How the I know which Match Names to use?
 * You can use the official [After-Effects Scripting Guide](https://ae-scripting.docsforadobe.dev/index.html). Scroll down to find the **Match Names** category.
 
 
 ## Example
 
-Let's say we have a layer
+Let's say we have a selected layer
 ```js
 var layer = app.project.activeItem.selectedLayers[0];
 ```
@@ -29,7 +29,7 @@ var positionPropGood = layer("ADBE Transform Group")("ADBE Position");
 ```
 
 ---
-Alternative Solutions
+### Alternative Solutions
 Some properties (such as position, rotation, scale, opacity) are embeded into ExtendScript and can be directly referenced without passing in a string:
 ```js
 var positionPropGood2 = layer.position;
