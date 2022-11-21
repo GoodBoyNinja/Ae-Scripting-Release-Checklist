@@ -21,4 +21,5 @@
  
 ⚙️ Avoid preferences hell
 * If your script contacts the internet, and / or writes, deletes or makes changes to local files on the user's machine, be aware of the fact that users may prevent you from doing so, by disabling "Allow Scripts to Write Files and Access Network". [You might want to warn users that access is denied to get your script to work.](resources/files_and_network_access.md)
+* If your script injects, modifies or appends an expression, you might want to make sure that the user is using the correct Expression Engine, otherwise your expression might fail on their machine.
 
