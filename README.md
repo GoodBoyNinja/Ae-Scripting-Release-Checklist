@@ -45,7 +45,7 @@
 
 🛡️ Prepare for the unexpected:
 * If you are using `curl` in combination with `system.callSystem` ([to contact gumroad for example](https://github.com/Adobe-CEP/CEP-Resources/issues/237)) be aware that curl is not shipped with older versions of Windows which your users might be using. It's a shitty poopoo situation so good luck with that.
-* Note that any network calls can be blocked by VPNs, Anti-Viruses and Firewalls. If a user is having issues and you can't find the problem, this might be the problem.
+* Note that network calls can be blocked by VPNs, Anti-Viruses and Firewalls. If a user is having issues and you can't find the problem, this might be the problem.
 * Note that any file system access operations **May** be blocked by Firewalls, but are usually not.
 
 
