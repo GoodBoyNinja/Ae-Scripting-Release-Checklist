@@ -23,3 +23,13 @@
 * If your script contacts the internet, and / or writes, deletes or makes changes to local files on the user's machine, be aware of the fact that users may prevent you from doing so, by disabling "Allow Scripts to Write Files and Access Network". [You might want to warn users that access is denied to get your script to work.](resources/files_and_network_access.md)
 * If your script injects, modifies or appends an expression, you might want to [make sure that the user is using the correct Expression Engine](resources/expression_engine.md), otherwise your expression might fail on their machine.
 
+&nbsp;
+
+🤺 Avoid conflicts with other tools
+* [Avoid using the prototype keyword.](https://www.tutorialsteacher.com/javascript/prototype-in-javascript). ```.prototype``` lets you add properties to existing functions / objects. When being done so on built in objects, such as `Array.prototype` or `String.prototype` these changes apply to any other script that After-Effects will run after yours, meaning you are making changes to the core features. By doing that you might be breaking other scripts.
+* * It's worth noting that other scripts may break yours by doing the same thing.
+* * Also worth noting that some built in After-Effects panels might break yours (HA!)
+* * If in doubt, ask users to run your script in the "Minimal" After-Effects workspace where no other tools exist to make sure any errors are not introduced by others making changes to core language features.
+* * Tell other developers to not do it.
+* When using [Polyfills](https://developer.mozilla.org/en-US/docs/Glossary/Polyfill) try to make sure they do not make changes to core features using `.prototype`. If possible, make changes to those polyfills and turn them into objects with methods. The most common one is polyfilling `json` or `json2.js` by including it in your code.
+
