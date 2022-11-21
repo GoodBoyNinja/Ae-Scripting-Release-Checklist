@@ -71,8 +71,8 @@ var userAllowedChangeToJSEngine = confirm("I must be set to JavaScript to work p
 if (userAllowedChangeToJSEngine) {
     setExpressionEngineToJS();
 } else {
-    alert("I can't work without JavaScript. Bye!");
+    alert("I can't work without JavaScript.\nPlease go to File -> Project Settings -> Expressions -> Expressions Engine and set it to JavaScript. Bye now!");
 }
 ```
-
-Otherwise, you can prompt them to do it themselves by asking them to go to `File -> Project Settings -> Expressions -> Expressions Engine` and set it to `JavaScript`
+<img width="372" alt="image" src="https://user-images.githubusercontent.com/66829812/203055870-69b3f5bf-0d13-42ef-9da4-4757eaa7ffc0.png">
+<img width="372" alt="image" src="https://user-images.githubusercontent.com/66829812/203055906-f6f2ffc5-7f7a-4333-98dd-962ecbeb1281.png">
