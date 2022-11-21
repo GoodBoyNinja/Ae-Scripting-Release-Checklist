@@ -11,7 +11,7 @@
 
  &nbsp;
  
-🌎 Make sure your script work across the globe
+🌎 Make sure your script works across the globe
 * Use [Match Names](/resources/matchNames.md) instead of Names when referencing items in After-Effects.
 * *  If your script creates, appends or modifies expressions, make sure those expressions also use [Match Names](/resources/matchNames.md) instead of Names.
 * If you are using Command IDs, [use them by numbers](https://hyperbrew.co/blog/after-effects-command-ids/) and **not** by name, sinces names change between languages (Thanks Justin Taylor)
