@@ -1,6 +1,6 @@
 # JSX Scripts Release Checklist
 ---
-> Developers, please feel free to contribute to this list based on your own experience ❤️
+> Please feel free to contribute to this list based on your own experience ❤️
 
 
 
