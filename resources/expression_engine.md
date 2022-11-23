@@ -52,7 +52,7 @@ function setExpressionEngineToJS() {
         } catch (e) { }
     app.project.expressionEngine = "javascript-1.0";
     
-    // Set the engine to JavaScript
+    // toggle color depth to force refresh
     var temp = app.project.bitsPerChannel;
     app.project.bitsPerChannel = 8;
     app.project.bitsPerChannel = 16;
