@@ -53,7 +53,7 @@ function setExpressionEngineToJS() {
     app.project.expressionEngine = "javascript-1.0";
     
     // Set the engine to JavaScript
-    temp = app.project.bitsPerChannel;
+    var temp = app.project.bitsPerChannel;
     app.project.bitsPerChannel = 8;
     app.project.bitsPerChannel = 16;
     app.project.bitsPerChannel = 32;
